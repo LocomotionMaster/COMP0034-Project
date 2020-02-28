@@ -17,9 +17,8 @@
 
     <div class="topnav">
         <a href="#" class="image"><img src="https://i.imgur.com/E0eL0wa.png"></a>
-        <a href="{{ url_for('home') }}" class="active">Home</a>
-        <a href="{{ url_for('signup') }}">Signup</a>
-        <a href="{{ url_for('post') }}">Posts</a>
+        <a href="{{ url_for('main.home') }}" class="active">Home</a>
+        <a href="{{ url_for('main.signup') }}">Signup</a>
     </div>
 
     {% block content %}{% endblock content %}
