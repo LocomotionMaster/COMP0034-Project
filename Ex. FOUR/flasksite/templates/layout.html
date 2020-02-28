@@ -1,0 +1,27 @@
+<html>
+
+
+<head>
+    <title>{{ title }}</title>
+
+    <link href="index.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Rain Blog</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="#" class="image"><img src="https://i.imgur.com/E0eL0wa.png"></a>
+        <a href="{{ url_for('home') }}" class="active">Home</a>
+        <a href="{{ url_for('signup') }}">Signup</a>
+        <a href="{{ url_for('post') }}">Posts</a>
+    </div>
+
+    {% block content %}{% endblock content %}
+
+</html>

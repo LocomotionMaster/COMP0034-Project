@@ -1,0 +1,12 @@
+{% extends "layout.html" %} {% block content %}
+<div class="column middle">
+    <h2>Main Content Heading</h2>
+
+</div>
+
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <label for="lname">Username</label> {{ form.username(class="form-control form-control-lg") }}
+    <label for="lname">Email address</label>{{ form.email(class="form-control form-control-lg") }} {{ form.submit(class="btn btn-outline-info") }}
+</form>
+{% endblock content %}
